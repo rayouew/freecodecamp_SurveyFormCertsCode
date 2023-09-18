@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Survey Form
+    </title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <form id="survey-form">
+    <fieldset>
+      <h1 id="title">
+        Eating Contest Survey Form
+      </h1>
+      <p id="description">
+        Please share us your brilliant ideas!
+      </p>
+    </fieldset>
+    <fieldset>
+      <label id="name-label">
+        Name: <input required id="name" name="name" type="text" placeholder="Insert your name"/>
+      </label>
+      <label id="email-label">
+        Email: <input required id="email" name="email" type="email" placeholder="Insert your email"/>
+      </label>
+      <label id="number-label">
+        Age(optional): <input id="number" type="number" name="age" min="12" max="150" placeholder="18"/>
+      </label>
+        Sex:
+        <label for="male">Male: <input required name="gender" id="male" type="radio" value="1"/></label>
+        <label for="female">Female: <input required name="gender" id="female" type="radio" value="2"/></label>
+        <label for="alien">Rather not says: <input required name="gender" id="alien" type="radio" value="3"/></label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">
+        What kind of food which you like to eat?
+      <select id="dropdown">
+        <option value="">(choose one)</option>
+        <option value="1">Burgers</option>
+        <option value="2">Pizza</option>
+        <option value="3">Uranium 235</option>
+        <option value="4">Fried Chicken</option>
+      </select>
+      </label>
+      <label id="conformation">
+        Have you considered joining in?
+        <input value="1" type="checkbox"/>
+        Yes
+        <input value="2" type="checkbox"/>
+        Sure
+        <input value="3" type="checkbox"/>
+        Absolutely
+      </label>
+    </fieldset>
+    <fieldset>
+      <label>Give us your comment!
+        <textarea placeholder="Oppenheimer">
+        </textarea>
+      </label>
+    </fieldset>
+    <fieldset>
+    </fielset>
+    <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
